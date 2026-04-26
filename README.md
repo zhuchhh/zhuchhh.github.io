@@ -4,8 +4,8 @@ Personal website source for GitHub Pages.
 
 ## Quick Start
 
-1. Edit `index.html` with your real content (name, links, project descriptions).
-2. Replace `hello@example.com` in `index.html` with your real email address.
+1. Edit `index.html` with your latest profile details, role summary, and experience bullets.
+2. Update contact links (email, phone, LinkedIn) in `index.html` when needed.
 3. Commit and push to the `main` branch.
 
 ## Enable GitHub Pages
@@ -23,7 +23,7 @@ Your site URL will be:
 
 ## Files
 
-- `index.html`: Homepage markup and content.
+- `index.html`: Resume-style homepage markup and content.
 - `styles.css`: Visual design, animations, and responsive layout.
 
 ## Customize Further

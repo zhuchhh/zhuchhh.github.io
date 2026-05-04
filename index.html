@@ -48,6 +48,38 @@
               Built reusable software building blocks for simulation prototyping, ran user studies,
               and implemented proof-of-concepts for automated pilot training with eye-tracking based assessment.
             </p>
+            
+            <button class="samples-toggle" type="button" aria-expanded="false" aria-controls="research-samples">
+              Show project samples
+            </button>
+            <div id="research-samples" class="gallery" hidden>
+              <div class="gallery-grid">
+                <figure>
+                  <img src="assets/gifs/research/checklist_example.gif" alt="Pilot checklist validation GIF" />
+                  <figcaption>The pilot executes the checklist while the assistant validates correctness and highlights discrepancies.</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/gifs/research/heatmap_example.gif" alt="Pilot gaze heatmap GIF" />
+                  <figcaption>The pilot&rsquo;s gaze behavior is captured and visualized as a 3D heatmap overlaid on the physical cockpit.</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/gifs/research/instructor.gif" alt="Instructor real-time guidance GIF" />
+                  <figcaption>The instructor can monitor the pilot&rsquo;s behavior in real time, collaborate, and provide guidance.</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/gifs/research/pilot.gif" alt="Pilot sees instructor GIF" />
+                  <figcaption>The pilot can monitor the instructor&rsquo;s behavior in real time.</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/gifs/research/GuardedButton.gif" alt="Virtual cockpit control GIF" />
+                  <figcaption>The instructor can operate cockpit controls through virtual control elements, with the effects synchronized to the simulation model.</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/gifs/research/GuardedSwitches.gif" alt="Guarded switch control GIF" />
+                  <figcaption>The same applies to switches, and the complex logic of guarded controls is also modeled.</figcaption>
+                </figure>
+              </div>
+            </div>
           </li>
           <li>
             <div class="item-head">
@@ -104,5 +136,18 @@
       <p>Open to software engineering and DevOps opportunities. Updated in 2026.</p>
     </footer>
   </div>
+  <script>
+    const samplesToggle = document.querySelector('.samples-toggle');
+    const samplesPanel = document.getElementById('research-samples');
+
+    if (samplesToggle && samplesPanel) {
+      samplesToggle.addEventListener('click', () => {
+        const willShow = samplesPanel.hidden;
+        samplesPanel.hidden = !willShow;
+        samplesToggle.setAttribute('aria-expanded', String(willShow));
+        samplesToggle.textContent = willShow ? 'Hide research samples' : 'Show research samples';
+      });
+    }
+  </script>
 </body>
 </html>

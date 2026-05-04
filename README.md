@@ -6,7 +6,12 @@ Personal website source for GitHub Pages.
 
 1. Edit `index.html` with your latest profile details, role summary, and experience bullets.
 2. Update contact links (email, phone, LinkedIn) in `index.html` when needed.
-3. Commit and push to the `main` branch.
+3. Replace or add GIFs in `assets/gifs/research/`, then update the six `<figure>` entries in the research section if filenames change.
+4. Commit and push to the `main` branch.
+
+## Local Preview
+
+The research gallery is now written directly in `index.html`, so you can preview it with Live Server or by opening `index.html` in your browser.
 
 ## Enable GitHub Pages
 
@@ -25,6 +30,7 @@ Your site URL will be:
 
 - `index.html`: Resume-style homepage markup and content.
 - `styles.css`: Visual design, animations, and responsive layout.
+- `assets/gifs/research/`: GIF samples shown in the research gallery.
 
 ## Customize Further
 
